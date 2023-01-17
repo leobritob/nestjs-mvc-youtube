@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1 {
+  @apply text-3xl font-bold;
+}
+
+h2 {
+  @apply text-2xl;
+}
+
+.container {
+  @apply p-4;
+}
+
+.user-list {
+  @apply grid grid-cols-3 gap-4;
+}
+
+.user-list__item {
+  @apply bg-white p-4 rounded-lg shadow-lg;
+}

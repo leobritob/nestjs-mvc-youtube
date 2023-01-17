@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NestJS MVC: Exemplo prático</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>NestJS MVC: Exemplo prático</h1>
+      <h2>Lista de Usuários</h2>
+      <div class="user-list">
+        <% users.forEach(user => { %>
+        <div class="user-list__item">
+          <p>Nome completo: <%= user.firstName %> <%= user.lastName %></p>
+          <p>E-mail: <%= user.email %></p>
+          <p>Idade: <%= user.age %></p>
+        </div>
+        <% }) %>
+      </div>
+    </div>
+  </body>
+</html>
